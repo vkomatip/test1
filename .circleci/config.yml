@@ -15,7 +15,7 @@ jobs:
           command: |
             docker build -t my-dockerhub-username/my-docker-image-name .
             docker login -u $DOCKERHUB_USERNAME -p $DOCKERHUB_PASSWORD
-            sudo docker push my-dockerhub-username/my-docker-image-name
+            docker push my-dockerhub-username/my-docker-image-name
 
 workflows:
   version: 2
