@@ -6,7 +6,7 @@ orbs:
 jobs:
   build-and-publish:
     docker:
-      - image: docker:19.03.13-git
+      - image: docker:20.10
     steps:
       - checkout
       - setup_remote_docker
